@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Jiongan Mu</title>
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;700&display=swap" rel="stylesheet">  
+        
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <div class="Navbar">
+            <div class="Navbar__Link Navbar__Link-brand">
+               <strong>Jiongan Mu</strong>
+             </div>
+             <div class="Navbar__Link Navbar__Link-toggle">
+                <img src="https://img.icons8.com/small/16/ffffff/menu.png"/>
+             </div>
+           
+           <nav class="Navbar__Items Navbar__Items--right">
+             <div class="Navbar__Link">
+               <a href="#home">Home</a>
+             </div>
+             <div class="Navbar__Link">
+                <a href="#about">About Me</a>
+             </div>
+             <div class="Navbar__Link">
+                <a href="#projects">Projects</a>  
+            </div>
+            <div class="Navbar__Link">
+                <a href="#contact">Contact</a>
+            </div>
+           </nav>
+         </div>
+         <script>
+             function classToggle() {
+                const navs = document.querySelectorAll('.Navbar__Items')
+                
+                navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+                }
+
+                document.querySelector('.Navbar__Link-toggle')
+                .addEventListener('click', classToggle);
+         </script>
+        <main>
+            <div id="home">
+                <div class="text">
+                    <h2>I'm <span class='highlight-yellow'> Jiongan Mu</span>,</h2>
+                        <h2>a second-year student from <span class='highlight-green'> University of Toronto</span>,</h2> 
+                        <h2>specialising in <span class='highlight-blue'> computer science</span>.</h2>
+                <div class='icons'>
+                    <a href='https://github.com/Zo6231'><img src="https://img.icons8.com/small/64/ffffff/github.png"/></a>
+                    <a href="https://www.instagram.com/jiongan12/"><img src="https://img.icons8.com/small/64/ffffff/instagram-new.png"/></a>
+                    
+                    <a href='mailto:jiongan.mu@mail.utoronto.ca'><img src="https://img.icons8.com/small/64/ffffff/email.png"/></a>
+                    <img src="https://img.icons8.com/small/64/ffffff/parse-from-clipboard.png"/>
+                </div> 
+                      
+                        
+                    
+                
+                </div>
+                 
+            </div>
+            <div id="about">
+                <div class='title'>About Me</div>
+                
+                <div class='item'>
+                    <h3 class='title'>Introduction</h3>
+                    <div class='content'>
+                        Hi! I'm Jiongan Mu, a second-year student in University of Toronto, st George campus, specialising in computer science. I am interested in many areas of computer science, including software development, full stack web development, algorithms and data structures, artificial intelligence and etc.
+                
+                    </div>
+                </div>
+                <div class='item'>
+                    <h3 class='title'>Background</h3>
+                    <div class='content'>
+                        I was born and raised in Harbin, China and studied there until when I was 18. I did one year of high school in Canada and right now this is my third year in Canada.
+                
+                    </div>
+                </div>
+                <div class='item'>
+                    <h3 class='title'>My Hobbies</h3>
+                    <div class='content'>
+                        I also have a lot of interests in music. I play the piano and the guitar and I sometimes compose my own songs. <a href="https://www.youtube.com/channel/UCORhJx95bpxu1FU1ZPSfndQ"><img src="https://img.icons8.com/small/32/ffffff/youtube--v1.png"/></a>I hope I can use what I've learned in computer science to help my music production instead of only looking at music in an abstract way.
+
+                        <br><br>
+                        I am a huge basketball fan. I love watching the NBA basketball and debating about it. I am good at 2k (a video game) too and I am happy to play against anyone who wants to challenge me.
+                    </div>
+                </div>
+                <div class='item'>
+                    <h3 class='title'>Expertise</h3>
+                    <div class='content'>
+                        <span class="badge bg-primary">Python</span>
+                        <span class="badge bg-secondary">C</span>
+                        <span class="badge bg-success">Java</span>
+                        <span class="badge bg-danger">Javascript</span>
+                        <span class="badge bg-warning text-dark">HTML</span>
+                        <span class="badge bg-info text-dark">CSS</span>
+                        <span class="badge bg-light text-dark">Assembly</span>
+                        <span class="badge bg-primary">Django</span>
+                        <span class="badge bg-secondary">React</span>
+                        <span class="badge bg-success">Node.js</span>
+                        <span class="badge bg-danger">Git</span>
+                        <span class="badge bg-warning text-dark">Bash</span>
+                        <!-- <span class="badge bg-warning text-dark">Redux</span>
+                        <span class="badge bg-info text-dark">Express.js</span>
+                        <span class="badge bg-light text-dark">SQL</span>
+                        <span class="badge bg-dark">PostgreSQL</span>
+                                         -->
+                    </div>
+                </div>
+
+            </div>
+           
+            <div id="projects">
+                <div class='title'>Projects</div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.ctfassets.net/23aumh6u8s0i/6ubUHRD1qfolOVHxiBfjZ7/4e704f48dc5b0104d0c380fec1fe9b9e/django" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">NBA Similarity</h5>
+                      <p class="card-text">A Django web app that finds you the five most similar players in NBA to player of your choice</p>
+                      <a href="https://github.com/chen-jonathan/NBA-Similarity" class="btn btn-primary">Github</a>
+                      <a href="https://nbasimilarity.herokuapp.com/app/" class="btn btn-info">View</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnX2wjc2c5-fICFdK6X6pO3FmF0XLo3Lbybw&usqp=CAU" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Study Bot</h5>
+                      <p class="card-text">A discord bot that helps the user study more effectively, made using Node.js</p>
+                      <a href="https://github.com/Zo6231/studyBot" class="btn btn-primary">Github</a>
+                      <a href="https://zo6231.github.io/studyBot/help.html" class="btn btn-info">View</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnX2wjc2c5-fICFdK6X6pO3FmF0XLo3Lbybw&usqp=CAU" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Game Bot</h5>
+                      <p class="card-text">A discord bot that simulates one of the most popular chinese games, "who's the spy", made using Node.js</p>
+                      <a href="https://github.com/Zo6231/whoIsTheSpy" class="btn btn-primary">Github</a>
+                      <a href="https://zo6231.github.io/whoIsTheSpy/game_bot.html" class="btn btn-info">View</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS979OQst3faWYD0GukGcLJnW37yoLGodq6Hw&usqp=CAU" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Conference</h5>
+                      <p class="card-text">An Android application for planning virtual conferences</p>
+                      <a href="https://github.com/chen-jonathan/NBA-Similarity" class="btn btn-primary">Github</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDYR1joSxXnJIEBDT8iA5ucK9uHZdNGWt2MQ&usqp=CAU" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">2k Ratings</h5>
+                      <p class="card-text">A python script that automatically generates a csv file of all players ratings from 2kratings.com using web scrapping</p>
+                      <a href="https://github.com/Zo6231/2k_ratings" class="btn btn-primary">Github</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="data:image/png;base64,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" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Centipede</h5>
+                      <p class="card-text">A remake of the centipede game made by Assembly language</p>
+                      <a href="https://github.com/Zo6231/centipede" class="btn btn-primary">Github</a>
+                    </div>
+                </div>
+            </div>
+            <div id='Contact'>
+                <div class='title'>Contact</div>
+                <div class='icons'>
+                    <a href='https://github.com/Zo6231'><img src="https://img.icons8.com/small/64/ffffff/github.png"/></a>
+                    <a href="https://www.instagram.com/jiongan12/"><img src="https://img.icons8.com/small/64/ffffff/instagram-new.png"/></a>
+                    
+                    <a href='mailto:jiongan.mu@mail.utoronto.ca'><img src="https://img.icons8.com/small/64/ffffff/email.png"/></a>
+                    <img src="https://img.icons8.com/small/64/ffffff/parse-from-clipboard.png"/><br>
+                   
+                </div> 
+                <div class='more'>
+                    <span class='highlight-blue'>Discord:</span> Zo#6231<br>
+                    <span class='highlight-green'>Email:</span> jiongan.mu@mail.utoronto.ca
+                </div>
+                
+                
+            </div>
+            
+        </main>
+        
+    </body>
+</html>
