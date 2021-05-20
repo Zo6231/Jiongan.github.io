@@ -89,21 +89,23 @@
     align-items: center;
     padding-top: 30px;
     padding-bottom: 10px;
+    flex-direction: column;
     
   }
   #about .item .content{
     
     text-align: start;
-    align-self: center;
-    width: 70%;
+    
+    width: 100%;
 
-    padding-right: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
     
   }
   #about .item .title{
     min-width: 0;
     text-transform:uppercase;
-    width: 30%;
+    
     font-size: 30px;
     
   }
@@ -114,6 +116,7 @@
     color: black;
     flex-wrap: wrap;
     animation: fadeIn linear 3s;
+    
   }
 .title{
         padding-top: 30px;
@@ -191,12 +194,6 @@
         cursor: pointer;
     
     } 
-    #about .item .title{
-        min-width: 0;
-        text-transform:uppercase;
-        width: 30%;
-        font-size: 18px;
-        
-      }
+    
 
   }
